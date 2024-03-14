@@ -2,7 +2,7 @@ name: flutter_application_commerce
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-
+publish_to: 'none' 
 version: 1.0.0+1
 
 environment:
@@ -23,6 +23,14 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  firebase_core: ^2.24.2
+  get: ^4.6.6
+  firebase_auth: ^4.16.0
+  flutter_form_builder: ^9.1.1
+  form_builder_validators: ^9.1.0
 
 dev_dependencies:
   flutter_test:
@@ -44,6 +52,7 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  generate: true
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
