@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_commerce/firebase_options.dart';
 import 'package:flutter_application_commerce/loginscreen/loginScreen.dart';
+import 'package:get/get.dart';
 
 late final FirebaseApp app;
 late final FirebaseAuth auth;
@@ -23,9 +24,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  GetMaterialApp(
       home: Scaffold(
-        body:  loginScreen(),
+        body:  loginScreen(
+
+        ),
       ),
     );
   }
