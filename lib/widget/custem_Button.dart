@@ -1,6 +1,11 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: unused_import
 
-import '../constent.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_application_commerce/constent.dart';
+import 'package:flutter_application_commerce/loginscreen/scend_screen.dart';
+import 'package:get/get.dart';
+
+
 import 'custem_text.dart';
 
 class custem_Button extends StatelessWidget {
@@ -21,7 +26,8 @@ class custem_Button extends StatelessWidget {
               primary: primaryColor,
             ),
             
-              onPressed:(){}, child:custem_text(text: text,
+              onPressed: () { onPressed(); },
+              child:custem_text(text: text,
   alignment: Alignment.center,
   color: Colors.white,
              ),
